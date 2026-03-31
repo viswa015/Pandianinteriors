@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>PANDIAN Interior's | Luxury Architectural Studio</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        // "primary": "#d46211",
+                        "primary": "#d46211",
+                        "charcoal": "#121212",
+                        "gold": "#d4af37"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body class="bg-[#fcfcfc] text-charcoal font-['Manrope'] overflow-x-hidden">
+    <div id="cursor"></div>
+
+
+    <header id="main-nav"
+        class="fixed top-0 w-full z-[100] px-4 lg:px-20 py-5 flex items-center justify-between border-b border-transparent bg-black text-white">
+
+
+        <div class="flex items-center">
+            <a href="index.html">
+                <img src="images1/logoo.png" alt="PANDIAN Interiors Logo"
+                    class="h-16 lg:h-16 w-auto object-contain cursor-pointer" />
+            </a>
+        </div>
+
+        <nav class="hidden md:flex gap-10">
+            <a href="index.html"
+                class="nav-link text-[10px] uppercase tracking-[0.3em] font-bold relative group">Home</a>
+            <a href="about.html" class="nav-link text-[10px] uppercase tracking-[0.3em] font-bold relative group">About
+                Us</a>
+            <a href="services.html"
+                class="nav-link text-[10px] uppercase tracking-[0.3em] font-bold relative group">Services</a>
+            <a href="contact.html"
+                class="nav-link text-[10px] uppercase tracking-[0.3em] font-bold relative group">Contact</a>
+        </nav>
+
+        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[110] relative p-2 focus:outline-none">
+            <span class="w-6 h-[1.5px] bg-white transition-all duration-500 origin-center"></span>
+            <span class="w-6 h-[1.5px] bg-white transition-all duration-300"></span>
+            <span class="w-6 h-[1.5px] bg-white transition-all duration-500 origin-center"></span>
+        </button>
+
+
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-full h-screen bg-[#063348] text-white z-[90] transform -translate-y-full pointer-events-none transition-all duration-500 ease-in-out md:hidden flex flex-col items-center justify-center gap-8">
+
+            <div class="flex flex-col items-center gap-8 transition-all duration-500 delay-300" id="mobile-links">
+                <a href="index.html"
+                    class="text-2xl uppercase tracking-[0.3em] font-light hover:text-[#27bdbf] transition-colors">Home</a>
+                <a href="about.html"
+                    class="text-2xl uppercase tracking-[0.3em] font-light hover:text-[#27bdbf] transition-colors">About
+                    Us</a>
+                <a href="services.html"
+                    class="text-2xl uppercase tracking-[0.3em] font-light hover:text-[#27bdbf] transition-colors">Services</a>
+                <a href="contact.html"
+                    class="text-2xl uppercase tracking-[0.3em] font-light hover:text-[#27bdbf] transition-colors">Contact</a>
+
+                <a href="contact.html"
+                    class="inline-block mt-6 border border-[#27bdbf] bg-[#c0d5dc] text-[#063348] hover:bg-[#27bdbf] hover:text-white px-10 py-4 text-[10px] font-bold uppercase tracking-widest transition-all rounded-xl text-center">
+                    Book Visit
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section class="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
+
+        <div class="absolute inset-0 z-0">
+            <video autoplay muted loop playsinline
+                class="w-full h-full object-cover brightness-90 contrast-110 transition-all duration-1000">
+                <source src="cupbaord work.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 w-full max-w-7xl">
+            <h2 class="text-white font-serif italic text-base md:text-xl mb-6 tracking-wide opacity-0 animate-slow-fade"
+                style="animation-delay: 0.3s">
+                Est. 2022 — Madurai
+            </h2>
+            <h1
+                class="text-white text-5xl md:text-9xl font-serif font-light leading-tight tracking-tighter mb-10 opacity-0 animate-reveal-up">
+                Timeless <br class="hidden md:block" /><span class="italic md:ml-12 text-primary">Spaces.</span>
+            </h1>
+
+
+        </div>
+    </section>
+
+
+
+
+    <section style="background-color: #063348;" class="py-20 md:py-32 px-6 lg:px-20 overflow-hidden">
+        <div class="max-w-[1440px] mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+
+                <div class="lg:col-span-5 lg:sticky lg:top-32" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="space-y-10">
+                        <h3 class="text-[#27bdbf] font-bold uppercase tracking-[0.4em] text-[10px]">Our Heritage</h3>
+
+                        <h2 class="text-4xl md:text-6xl font-serif leading-tight text-white">
+                            A decade of architectural <span class="italic text-[#27bdbf]">finesse</span>.
+                        </h2>
+
+                        <div class="space-y-6 text-white/70 text-lg leading-relaxed font-light">
+                            <p>We approach every project as a dialogue between the site's history and the client's
+                                future.</p>
+                            <p>Today, our multi-disciplinary team operates across three continents, delivering bespoke
+                                excellence.</p>
+                        </div>
+
+                        <div class="flex gap-16 pt-8 border-t border-white/10">
+                            <div>
+                                <p class="text-4xl md:text-5xl font-serif text-white">21</p>
+                                <p class="text-[9px] uppercase tracking-widest font-bold mt-2 text-white/50">Years of
+                                    Curation</p>
+                            </div>
+                            <div>
+                                <p class="text-4xl md:text-5xl font-serif text-white">35</p>
+                                <p class="text-[9px] uppercase tracking-widest font-bold mt-2 text-white/50">Global
+                                    Accolades</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-2 gap-4 md:gap-6 relative">
+                    <div class="aspect-[3/4] mt-12 md:mt-24 shadow-2xl overflow-hidden rounded-2xl border border-white/10"
+                        data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images1/about/st2.jpeg" alt="Modern Architecture"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+
+                    <div class="space-y-4 md:space-y-6">
+                        <div class="aspect-[4/5] shadow-2xl overflow-hidden rounded-2xl border border-white/10"
+                            data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                            <img src="images1/about/st1.jpeg" alt="Interior Design"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="aspect-square md:-translate-x-12 shadow-2xl overflow-hidden rounded-2xl border border-white/10"
+                            data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                            <img src="images1/about/tv1.jpeg" alt="Architectural Detail"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+
+
+    <section class="relative py-12 md:py-20 bg-warm-neutral/5 overflow-hidden">
+
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-20 mb-06">
+            <h2 class="text-4xl md:text-6xl font-serif leading-tight">Project <span
+                    class="italic text-[#27bdbf]">Vignettes</span></h2>
+
+            <p class="text-[16px] uppercase tracking-[0.4em] text-slate-500 dark:text-white/90 mt-4">Continuous Curation
+            </p>
+        </div>
+
+        <div class="flex overflow-hidden group">
+            <div class="flex gap-10 animate-infinite-scroll hover:pause-scroll items-start">
+
+                <div class="flex gap-10 items-start">
+                    <div class="flex-none w-[300px] md:w-[450px] h-[500px] md:h-[700px] relative pt-16">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-16 bg-black/20 dark:bg-white/20">
+                        </div>
+                        <div
+                            class="relative w-full h-full rounded-[2rem] overflow-hidden glass-panel border-white/20 shadow-2xl transition-transform duration-700 hover:-translate-y-4">
+                            <img src="images1/about/a9.jpeg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-[250px] md:w-[350px] h-[450px] md:h-[650px] relative pt-32">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-32 bg-black/20 dark:bg-white/20">
+                        </div>
+                        <div
+                            class="relative w-full h-full rounded-[2rem] overflow-hidden glass-panel shadow-2xl transition-transform duration-700 hover:-translate-y-4 -rotate-1">
+                            <img src="images1/about/cupboard.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-[300px] md:w-[400px] h-[500px] md:h-[700px] relative pt-20">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-20 bg-black/20 dark:bg-white/20">
+                        </div>
+                        <div
+                            class="relative w-full h-full rounded-[2rem] overflow-hidden glass-panel shadow-2xl transition-transform duration-700 hover:-translate-y-4 rotate-1">
+                            <img src="images1/about/one.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-[280px] md:w-[420px] h-[480px] md:h-[680px] relative pt-24">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-black/20 dark:bg-white/20">
+                        </div>
+                        <div
+                            class="relative w-full h-full rounded-[2rem] overflow-hidden glass-panel shadow-2xl transition-transform duration-700 hover:-translate-y-4">
+                            <img src="images1/about/st1.jpeg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-[300px] md:w-[400px] h-[500px] md:h-[700px] relative pt-12">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-12 bg-black/20 dark:bg-white/20">
+                        </div>
+                        <div
+                            class="relative w-full h-full rounded-[2rem] overflow-hidden glass-panel shadow-2xl transition-transform duration-700 hover:-translate-y-4">
+                            <img src="images1/about/five.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-[260px] md:w-[380px] h-[460px] md:h-[660px] relative pt-28">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-28 bg-black/20 dark:bg-white/20">
+                        </div>
+                        <div
+                            class="relative w-full h-full rounded-[2rem] overflow-hidden glass-panel shadow-2xl transition-transform duration-700 hover:-translate-y-4 -rotate-1">
+                            <img src="images1/about/tv1.jpeg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-10 items-start">
+                    <div class="flex-none w-[300px] md:w-[450px] h-[500px] md:h-[700px] relative pt-16">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-16 bg-black/20 dark:bg-white/20">
+                        </div>
+                        <div
+                            class="relative w-full h-full rounded-[2rem] overflow-hidden glass-panel border-white/20 shadow-2xl transition-transform duration-700 hover:-translate-y-4">
+                            <img src="images1/about/a9.jpeg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-[250px] md:w-[350px] h-[450px] md:h-[650px] relative pt-32">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-32 bg-black/20 dark:bg-white/20">
+                        </div>
+                        <div
+                            class="relative w-full h-full rounded-[2rem] overflow-hidden glass-panel shadow-2xl transition-transform duration-700 hover:-translate-y-4 -rotate-1">
+                            <img src="images1/about/cupboard.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-[300px] md:w-[400px] h-[500px] md:h-[700px] relative pt-20">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-20 bg-black/20 dark:bg-white/20">
+                        </div>
+                        <div
+                            class="relative w-full h-full rounded-[2rem] overflow-hidden glass-panel shadow-2xl transition-transform duration-700 hover:-translate-y-4 rotate-1">
+                            <img src="images1/about/one.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-[280px] md:w-[420px] h-[480px] md:h-[680px] relative pt-24">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-black/20 dark:bg-white/20">
+                        </div>
+                        <div
+                            class="relative w-full h-full rounded-[2rem] overflow-hidden glass-panel shadow-2xl transition-transform duration-700 hover:-translate-y-4">
+                            <img src="images1/about/st1.jpeg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-[300px] md:w-[400px] h-[500px] md:h-[700px] relative pt-12">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-12 bg-black/20 dark:bg-white/20">
+                        </div>
+                        <div
+                            class="relative w-full h-full rounded-[2rem] overflow-hidden glass-panel shadow-2xl transition-transform duration-700 hover:-translate-y-4">
+                            <img src="images1/about/five.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-[260px] md:w-[380px] h-[460px] md:h-[660px] relative pt-28">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-28 bg-black/20 dark:bg-white/20">
+                        </div>
+                        <div
+                            class="relative w-full h-full rounded-[2rem] overflow-hidden glass-panel shadow-2xl transition-transform duration-700 hover:-translate-y-4 -rotate-1">
+                            <img src="images1/about/tv1.jpeg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @keyframes infinite-scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+
+            /* Crucial for gap-less loop */
+        }
+
+        .animate-infinite-scroll {
+            display: flex;
+            width: max-content;
+            /* Ensures content doesn't wrap */
+            animation: infinite-scroll 45s linear infinite;
+        }
+
+        .hover\:pause-scroll:hover {
+            animation-play-state: paused;
+        }
+    </style>
+
+    <section class="py-24 md:py-32 px-6 lg:px-20 max-w-[1440px] mx-auto overflow-hidden">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-20 gap-8"
+            data-aos="fade-up">
+            <div class="max-w-2xl">
+                <span class="text-[#063348] font-bold tracking-[0.3em] uppercase text-[10px] mb-4 block">Client
+                    Perspectives</span>
+                <h2 class="text-4xl md:text-6xl font-serif mb-6 text-charcoal">Kind Words</h2>
+                <p class="text-black text-lg font-light leading-relaxed italic">"Our reputation is built on the spaces
+                    we create and the lives we touch."</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-[1px] bg-charcoal/20"></div>
+                <div class="flex items-center gap-1">
+                    <span class="text-xs font-bold tracking-[0.3em] uppercase">4.9/5 Rating</span>
+                    <div class="flex text-[#C0D925] ml-2">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="review-card group cursor-pointer" data-aos="fade-up">
+                <div
+                    class="relative bg-[#008080] rounded-[40px] p-10 text-white transition-all duration-500 hover:-translate-y-2 h-full flex flex-col">
+                    <div class="flex gap-1 text-[#C0D925] mb-6">
+                        ★ ★ ★ ★ ★
+                    </div>
+                    <p class="text-lg font-light leading-relaxed mb-8 flex-grow">The precision in their execution is unparalleled. From the initial sketch to the final polish, Pandiyan Interior’s transformed our vision into a staggering reality of architectural beauty."</p>
+                    <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center font-bold">JD
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold uppercase tracking-wider">Venkatesh </h4>
+                            <p class="text-[10px] opacity-60 uppercase tracking-widest">Mall supermarket</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                <div
+                    class="relative bg-[#C0D925] rounded-[40px] p-10 text-charcoal transition-all duration-500 hover:-translate-y-2 h-full flex flex-col">
+                    <div class="flex gap-1 text-[#008080] mb-6">
+                        ★ ★ ★ ★ ★
+                    </div>
+                    <p class="text-lg font-light leading-relaxed mb-8 flex-grow">"Working with Pandiyan and the team was
+                        seamless. They understood our brand aesthetic and translated it into a physical masterpiece."
+                    </p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6">
+                        <div class="w-12 h-12 rounded-full bg-black/5 flex items-center justify-center font-bold">SH
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold uppercase tracking-wider">Sasi</h4>
+                            <p class="text-[10px] opacity-60 uppercase tracking-widest">Global Creative Dir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                <div
+                    class="relative bg-[#008080] rounded-[40px] p-10 text-white transition-all duration-500 hover:-translate-y-2 h-full flex flex-col">
+                    <div class="flex gap-1 text-[#C0D925] mb-6">
+                        ★ ★ ★ ★ ★
+                    </div>
+                    <p class="text-lg font-light leading-relaxed mb-8 flex-grow">"Minimalism at its finest. They turned
+                        our corporate headquarters into an oasis of productivity and calm."</p>
+                    <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center font-bold">MK
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold uppercase tracking-wider">Tamilmaran</h4>
+                            <p class="text-[10px] opacity-60 uppercase tracking-widest">Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+<footer class="relative bg-[#063348] text-white pt-16 pb-6 px-6 lg:px-20 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-[#063348] opacity-95"></div>
+        <img src="images1/a8.jpeg" alt="Footer Background" class="w-full h-full object-cover opacity-10 grayscale">
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+            <div class="space-y-6" data-aos="fade-up">
+                <div class="flex items-center gap-4">
+                    <div class="p-2 border border-[#c0d5de]/50 animate-slow-spin">
+                        <svg width="30" height="30" viewBox="0 0 100 100" class="fill-current text-[#c0d5de]">
+                            <path d="M20 20 H80 V80 H20 Z" fill="none" stroke="currentColor" stroke-width="2" />
+                            <path d="M40 40 H60 V60 H40 Z" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-bold tracking-tighter uppercase font-['Playfair_Display']">
+                        <span class="italic text-[#27bdbf] font-light text-xl">Interior's</span>
+                    </h2>
+                </div>
+
+                <div class="relative group/quote">
+                    <div class="absolute -inset-2 bg-white/5 blur-xl rounded-lg opacity-0 group-hover/quote:opacity-100 transition-opacity duration-700"></div>
+                    <p class="relative text-white/180 text-sm leading-relaxed font-medium italic border-l-4 border-[#27bdbf] pl-6">
+                        "Design is not just what it looks like; it's how it feels to live within the space."
+                    </p>
+                </div>
+
+                <div class="flex gap-4">
+                    <a href="https://instagram.com/pandian125" target="_blank"
+                        class="transition-all duration-500 bg-white/5 p-3 rounded-full hover:bg-[#c0d5de] hover:text-[#063348] hover:scale-110 hover:rotate-[360deg] border border-white/5">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100" class="flex flex-col items-center text-center">
+                <h4 class="text-xs uppercase tracking-[0.5em] font-bold text-[#27bdbf] mb-8 border-b border-white/10 pb-3 block w-fit mx-auto">
+                    Directory
+                </h4>
+                <ul class="space-y-4 flex flex-col items-center">
+                    <li><a href="index.html" class="group flex items-center text-white/80 hover:text-white transition-all duration-500"><span class="w-0 group-hover:w-6 h-[1px] bg-[#c0d5de] transition-all mr-0 group-hover:mr-3"></span><span class="text-sm font-light uppercase tracking-widest">Home</span></a></li>
+                    <li><a href="about.html" class="group flex items-center text-white/80 hover:text-white transition-all duration-500"><span class="w-0 group-hover:w-6 h-[1px] bg-[#c0d5de] transition-all mr-0 group-hover:mr-3"></span><span class="text-sm font-light uppercase tracking-widest">Our Studio</span></a></li>
+                    <li><a href="services.html" class="group flex items-center text-white/80 hover:text-white transition-all duration-500"><span class="w-0 group-hover:w-6 h-[1px] bg-[#c0d5de] transition-all mr-0 group-hover:mr-3"></span><span class="text-sm font-light uppercase tracking-widest">Services</span></a></li>
+                    <li><a href="contact.html" class="group flex items-center text-white/80 hover:text-white transition-all duration-500"><span class="w-0 group-hover:w-6 h-[1px] bg-[#c0d5de] transition-all mr-0 group-hover:mr-3"></span><span class="text-sm font-light uppercase tracking-widest">Inquiry</span></a></li>
+                </ul>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col items-center text-center md:items-start md:text-left w-full">
+                <div class="w-full flex justify-center md:justify-start">
+                    <h4 class="text-xs uppercase tracking-[0.5em] font-bold text-[#27bdbf] mb-8 border-b border-white/10 pb-3 inline-block">Contact</h4>
+                </div>
+                <div class="space-y-8 w-full flex flex-col items-center md:items-start">
+                    <div class="flex flex-col items-center md:flex-row md:items-start gap-4 group cursor-pointer">
+                        <div class="w-10 h-10 shrink-0 bg-white/5 flex items-center justify-center group-hover:bg-[#c0d5de] transition-colors duration-500">
+                            <svg class="w-4 h-4 text-[#c0d5de] group-hover:text-[#063348]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                        </div>
+                        <p class="text-sm text-white font-light leading-relaxed group-hover:text-white transition-colors">Aruldosspuram,<br>Madurai - 625018.</p>
+                    </div>
+                    <div class="flex flex-col items-center md:flex-row md:items-center gap-4 group cursor-pointer">
+                        <div class="w-10 h-10 shrink-0 bg-white/5 flex items-center justify-center group-hover:bg-[#c0d5de] transition-colors duration-500">
+                            <svg class="w-4 h-4 text-[#c0d5de] group-hover:text-[#063348]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        </div>
+                        <a href="tel:+919876543210" class="text-sm text-white/80 font-light group-hover:text-white transition-colors tracking-wide">+91 98765 43210</a>
+                    </div>
+                    <div class="flex flex-col items-center md:flex-row md:items-center gap-4 group cursor-pointer">
+                        <div class="w-10 h-10 shrink-0 bg-white/5 flex items-center justify-center group-hover:bg-[#c0d5de] transition-colors duration-500">
+                            <svg class="w-4 h-4 text-[#c0d5de] group-hover:text-[#063348]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <a href="mailto:pandiyang1986@gmail.com" class="text-sm text-white/80 font-light group-hover:text-white transition-colors break-all">pandiyan1986g@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/5 p-6 border border-white/10 backdrop-blur-sm shadow-2xl" data-aos="fade-up" data-aos-delay="300">
+                <h4 class="text-xs uppercase tracking-[0.4em] font-bold text-[#27bdbf] mb-4">Newsletter</h4>
+                <p class="text-[11px] text-white/70 mb-6 uppercase tracking-widest leading-relaxed">Join our elite list for interior trends.</p>
+                <div class="space-y-4">
+                    <input type="email" id="sub_email" placeholder="YOUR EMAIL"
+                        class="w-full bg-white/5 border border-white/10 px-4 py-3 text-[10px] tracking-widest focus:outline-none focus:border-[#c0d5de] text-white transition-all">
+                    <button type="button" onclick="sendMail()"
+                        class="w-full bg-[#c0d5de] text-[#063348] text-[10px] font-bold py-3 uppercase tracking-[0.2em] hover:bg-white hover:text-[#063348] transition-all duration-500 shadow-[0_0_20px_rgba(192,213,222,0.2)]">
+                        Subscribe Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pt-8 mt-8 border-t border-white/10 flex flex-col lg:flex-row justify-between items-center gap-6 text-center lg:text-left">
+            <p class="text-[10px] uppercase font-medium tracking-[0.3em] text-white/90 leading-relaxed">
+                © 2026 <span class="text-[#c0d5de] font-bold">Pandian Interiors</span>
+                <span class="hidden sm:inline mx-2 opacity-20">|</span><br class="sm:hidden"> All Rights Reserved
+            </p>
+            <div class="h-[1px] flex-grow mx-8 bg-gradient-to-r from-transparent via-white/5 to-transparent hidden lg:block"></div>
+            <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
+                <p class="text-[10px] uppercase font-bold tracking-[0.4em] text-white/90 transition-all duration-300">
+                    Designed By <a href="https://hexavisiontech.com" target="_blank" class="text-[#c0d5de] ml-2 tracking-[0.5em] hover:text-white transition-colors duration-500 underline-offset-4 hover:underline">Hexavision Technologies</a>
+                </p>
+                <span class="px-4 py-1 border border-white/10 rounded-full text-[9px] tracking-[0.4em] text-white/90 uppercase bg-white/5">Madurai</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    /**
+     * Strictly routes the subscription details to pandiyan1986@gmail.com
+     */
+    function sendMail() {
+        const email = document.getElementById('sub_email').value;
+        const targetEmail = "pandiyang1986@gmail.com";
+        
+        if (!email) { 
+            alert("Please enter your email first!"); 
+            return; 
+        }
+        
+        const subject = encodeURIComponent("New Newsletter Subscription Request");
+        const body = encodeURIComponent(`Hi Pandian Interior's,\n\nI would like to subscribe to your newsletter for the latest interior trends.\n\nSubscriber Email: ${email}`);
+        
+        // This opens the default mail client with all details filled
+        window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
+    }
+</script>
+
+
+
+    <script src="Script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+                nav.classList.remove('text-white');
+                nav.classList.add('text-white'); // Keeping white on dark background
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        function toggleFaq(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slider = document.getElementById("portfolioSlider");
+            const leftBtn = document.getElementById("scrollLeft");
+            const rightBtn = document.getElementById("scrollRight");
+
+            // Calculate dynamic scroll amount (width of one card + gap)
+            const getScrollStep = () => {
+                const firstCard = slider.querySelector('div');
+                return firstCard.offsetWidth + 24; // 24 is the gap-6 in tailwind
+            };
+
+            // Manual Click Logic
+            leftBtn.addEventListener("click", () => {
+                slider.scrollBy({ left: -getScrollStep(), behavior: "smooth" });
+            });
+
+            rightBtn.addEventListener("click", () => {
+                slider.scrollBy({ left: getScrollStep(), behavior: "smooth" });
+            });
+
+            // Auto-Slide Logic
+            let isPaused = false;
+
+            const startAutoSlide = () => {
+                return setInterval(() => {
+                    if (!isPaused) {
+                        // Check if we reached the end (with a small buffer)
+                        if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 50) {
+                            slider.scrollTo({ left: 0, behavior: "smooth" });
+                        } else {
+                            slider.scrollBy({ left: getScrollStep(), behavior: "smooth" });
+                        }
+                    }
+                }, 4000); // 4 seconds
+            };
+
+            let autoSlideInterval = startAutoSlide();
+
+            // Pause on Hover/Touch
+            slider.addEventListener("mouseenter", () => isPaused = true);
+            slider.addEventListener("mouseleave", () => isPaused = false);
+            slider.addEventListener("touchstart", () => isPaused = true);
+            slider.addEventListener("touchend", () => {
+                // Resume after a short delay
+                setTimeout(() => isPaused = false, 2000);
+            });
+        });
+    </script>
+
+    <script>
+        const cursor = document.getElementById('cursor');
+
+        // Smooth movement logic
+        document.addEventListener('mousemove', (e) => {
+            // requestAnimationFrame ensures the cursor matches the monitor refresh rate
+            window.requestAnimationFrame(() => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            });
+        });
+
+        // Detect all interactive elements for the "Grow" effect
+        const interactables = document.querySelectorAll('a, button, .group, input, .cursor-pointer, .service-card');
+
+        interactables.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.classList.add('cursor-active');
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.classList.remove('cursor-active');
+            });
+        });
+
+        // Handle visibility when mouse enters/leaves the browser window
+        document.addEventListener('mouseleave', () => cursor.style.opacity = '0');
+        document.addEventListener('mouseenter', () => cursor.style.opacity = '1');
+    </script>
+
+
+
+
+</body>
+
+</html>

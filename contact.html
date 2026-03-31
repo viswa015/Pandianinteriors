@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>PANDIYAN Interior's | Luxury Architectural Studio</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        // "primary": "#d46211",
+                        "primary": "#d46211",
+                        "charcoal": "#121212",
+                        "gold": "#d4af37"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="bg-[#fcfcfc] text-charcoal font-['Manrope'] overflow-x-hidden">
+    <div id="cursor"></div>
+
+
+    <header id="main-nav"
+        class="fixed top-0 w-full z-[100] px-4 lg:px-20 py-5 flex items-center justify-between border-b border-transparent bg-black text-white">
+
+
+        <div class="flex items-center">
+            <a href="index.html">
+                <img src="images1/logoo.png" alt="Pandiyan Interiors Logo"
+                    class="h-16 lg:h-16 w-auto object-contain cursor-pointer" />
+            </a>
+        </div>
+
+
+
+
+        <nav class="hidden md:flex gap-10">
+            <a href="index.html"
+                class="nav-link text-[10px] uppercase tracking-[0.3em] font-bold relative group">Home</a>
+            <a href="about.html" class="nav-link text-[10px] uppercase tracking-[0.3em] font-bold relative group">About
+                Us</a>
+            <a href="services.html"
+                class="nav-link text-[10px] uppercase tracking-[0.3em] font-bold relative group">Services</a>
+            <a href="contact.html"
+                class="nav-link text-[10px] uppercase tracking-[0.3em] font-bold relative group">Contact</a>
+        </nav>
+
+
+
+        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[110] relative p-2 focus:outline-none">
+            <span id="bar1" class="w-6 h-[1.5px] bg-white transition-all duration-500 origin-center"></span>
+            <span id="bar2" class="w-6 h-[1.5px] bg-white transition-all duration-300"></span>
+            <span id="bar3" class="w-6 h-[1.5px] bg-white transition-all duration-500 origin-center"></span>
+        </button>
+
+
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-full h-screen  bg-[#063348] text-white z-[90] transform -translate-y-full opacity-0 pointer-events-none transition-all duration-500 ease-in-out md:hidden flex flex-col items-center justify-center gap-8">
+            <div class="flex flex-col items-center gap-8 opacity-100 transition-opacity duration-500 delay-300"
+                id="mobile-links"></div>
+
+            <a href="index.html"
+                class="text-2xl uppercase tracking-[0.3em] font-light hover:text-text-[#27bdbf] transition-colors">Home</a>
+            <a href="about.html"
+                class="text-2xl uppercase tracking-[0.3em] font-light hover:text-text-[#27bdbf]  transition-colors">About
+                Us</a>
+            <a href="services.html"
+                class="text-2xl uppercase tracking-[0.3em] font-light hover:text-text-[#27bdbf]  transition-colors">Services</a>
+            <a href="contact.html"
+                class="text-2xl uppercase tracking-[0.3em] font-light hover:text-text-[#27bdbf]    transition-colors">Contact</a>
+
+
+            <a href="contact.html"
+                class="inline-block mt-6 border border-[#27bdbf] bg-[#c0d5dc] text-[#063348] hover:bg-[#27bdbf] hover:text-white px-10 py-4 text-[10px] font-bold uppercase tracking-widest transition-all rounded-xl text-center">
+                Book Visit
+            </a>
+
+        </div>
+        </div>
+    </header>
+
+
+
+
+
+    <main class="flex-1 pt-20">
+        <section class="relative px-6 md:px-20 py-20 md:py-32 max-w-[1440px] mx-auto overflow-hidden">
+            <div class="absolute top-0 right-0 -z-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-blob"></div>
+            <div
+                class="absolute bottom-0 left-0 -z-10 w-72 h-72 bg-gold/10 rounded-full blur-3xl animate-blob animation-delay-2000">
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="flex flex-col gap-10">
+                    <div class="space-y-6">
+                        <div class="w-16 h-1 bg-[#27bdbf]" data-aos="fade-right"></div>
+                        <h2 class="text-5xl md:text-8xl font-light tracking-tighter text-charcoal dark:text-white leading-tight"
+                            data-aos="fade-up">
+                            Get in <br>
+                            <span class="font-extrabold text-[#27bdbf] italic">Touch.</span>
+                        </h2>
+                        <p class="text-xl text-gray-500 dark:text-gray-400 max-w-md leading-relaxed font-light"
+                            data-aos="fade-up" data-aos-delay="200">
+                            Ready to elevate your space? Reach out to our award-winning collective and begin your
+                            architectural journey.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" data-aos="fade-up" data-aos-delay="400">
+                        <div
+                            class="p-6 bg-white dark:bg-charcoal/30 border border-black/5 rounded-2xl shadow-sm hover:border-primary transition-colors">
+                            <!-- <span class="material-symbols-outlined text-[#cod5dc] text-3xl mb-4">mail</span> -->
+                            <h4 class="font-bold">Email Us</h4> <br>
+                            <p class="text-sm text-gray-500"> pandiyan1986g@gmail.com</p>
+                            <p class="text-sm text-gray-500"> 98658 74344</p>
+                            <!-- <p class="text-sm text-gray-500">94879 18724</p> -->
+                        </div>
+                        <div
+                            class="p-6 bg-white dark:bg-charcoal/30 border border-black/5 rounded-2xl shadow-sm hover:border-primary transition-colors">
+                            <!-- <span class="material-symbols-outlined text-primary text-3xl mb-4">schedule</span> -->
+                            <h4 class="font-bold">Working Hours</h4> <br>
+                            <p class="text-sm text-gray-500"> Mon - Sat: 9AM - 8PM</p>
+                            <p class="text-sm text-gray-500"> Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group" data-aos="fade-left">
+                    <div class="absolute -inset-4 border border-primary/20 rounded-xl -z-10"></div>
+                    <div class="relative w-full aspect-[4/5] rounded-xl shadow-2xl overflow-hidden bg-black">
+                        <video autoplay muted loop playsinline
+                            class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-1000">
+                            <source src="video1.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-8 left-8 text-white">
+                            <p class="text-[#c0d5de] font-bold text-xs uppercase tracking-widest mb-1">Office Gallery
+                            </p>
+                            <h4 class="font-serif text-2xl italic">The Studio Atmosphere</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section class="swing-gallery">
+            <div class="container">
+                <!-- <h2 class="section-title"  >Our Featured Designs</h2> -->
+
+                <h3 class="text-3xl font-['Playfair_Display'] italic mb-8 text-[#063348]">Our Signatures Marks</h3>
+
+                <div class="gallery-grid">
+                    <div class="polaroid-card">
+                        <div class="pin"></div>
+                        <div class="img-box"><img src="images1/bedroom2.jpg" Interior"></div>
+                        <p>Living Room</p>
+                    </div>
+                    <div class="polaroid-card">
+                        <div class="pin"></div>
+                        <div class="img-box"><img src="images1/teammates/kitch1.jpeg" alt="Interior"></div>
+                        <p>Modular Kitchen</p>
+                    </div>
+                    <div class="polaroid-card">
+                        <div class="pin"></div>
+                        <div class="img-box"><img src="images1/d.jpeg"></div>
+                        <p>Bedroom</p>
+                    </div>
+                    <div class="polaroid-card">
+                        <div class="pin"></div>
+                        <div class="img-box"><img src="images1/screen1.png"></div>
+                        <p>Office Space</p>
+                    </div>
+                    <div class="polaroid-card">
+                        <div class="pin"></div>
+                        <div class="img-box"><img src="images1/about/cupboard.jpg"></div>
+                        <p>Modular Area</p>
+                    </div>
+                    <div class="polaroid-card">
+                        <div class="pin"></div>
+                        <div class="img-box"><img src="images1/about/a9.jpeg"></div>
+                        <p>Modular Design</p>
+                    </div>
+                    <div class="polaroid-card">
+                        <div class="pin"></div>
+                        <div class="img-box"><img src="images1/ceal.jpg"></div>
+                        <p>False Ceiling</p>
+                    </div>
+                    <div class="polaroid-card">
+                        <div class="pin"></div>
+                        <div class="img-box"><img src="images1/teammates/tv1.png"></div>
+                        <p>TV Unit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="relative bg-[#063348] text-white px-6 md:px-20 py-24 overflow-hidden">
+            <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+                <div class="lg:col-span-5 space-y-8" data-aos="fade-right">
+                    <h2 class="text-4xl font-extrabold uppercase tracking-tighter">Find Us</h2>
+                    <div
+                        class="map-container w-full h-80 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62873.34440801833!2d78.07721865955032!3d9.925200701021487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c582b1189633%3A0xd3b34b6e51351508!2sMadurai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1707600000000!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-white">location: </span>
+                            <p class="text-sm text-white-400">Aruldosspuram ,<br>Madurai,<br>TamilNadu, India.</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-white">phone:</span>
+                            <p class="text-sm text-white-400">+91 98658 74344<br>+91 94879 18724</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/10 text-center"
+                    data-aos="fade-left">
+                    <h3 class="text-2xl font-serif italic mb-8">Direct Inquiry</h3>
+                    <form id="contactInquiryForm" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-[10px] uppercase tracking-widest text-white font-bold block">Full
+                                    Name</label>
+                                <input id="userName" required
+                                    class="w-full bg-transparent border-0 border-b border-white/20 focus:ring-0 focus:border-[#063348] px-0 py-2 text-white text-center transition-all"
+                                    placeholder="Enter your name" type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-[10px] uppercase tracking-widest text-white font-bold block">Email
+                                    Address</label>
+                                <input id="userEmail" required
+                                    class="w-full bg-transparent border-0 border-b border-white/20 focus:ring-0 focus:border-[#063348] px-0 py-2 text-white text-center transition-all"
+                                    placeholder="Enter your email" type="email" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase tracking-widest text-white font-bold block">Your
+                                Message</label>
+                            <textarea id="userMessage" required rows="3"
+                                class="w-full bg-transparent border-0 border-b border-white/20 focus:ring-0 focus:border-[#063348] px-0 py-2 text-white text-center resize-none transition-all"
+                                placeholder="Tell us about your project..."></textarea>
+                        </div>
+
+
+
+                        <a href="https://wa.me/919865874344?text=Hi%20Pandiyan%20Interiors!%20I%20am%20interested%20in%20your%20luxury%20interior%20services.%20Can%20you%20please%20provide%20more%20details?"
+                            target="_blank"
+                            class="w-full h-14 bg-[#27bdbf] hover:bg-[#063348] text-white font-bold rounded-xl transition-all duration-500 flex items-center justify-center gap-3 group no-underline shadow-lg border border-transparent">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span class="uppercase tracking-widest text-sm">Send Inquiry</span>
+                        </a>
+
+
+                    </form>
+                </div>
+
+                </form>
+            </div>
+            </div>
+        </section>
+
+        <section class="px-6 md:px-20 py-12 bg-white dark:bg-[#1a1a1a] border-t border-gray-200 dark:border-white/10">
+            <div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex gap-8">
+                    <a href="https://instagram.com/pandian125" target="_blank"
+                        class="hover:text-primary transition-all"><i class="fa-brands fa-instagram text-2xl"></i></a>
+                    <!-- <a href="#" class="hover:text-primary transition-all"><i class="fa-brands fa-linkedin text-2xl"></i></a> -->
+                    <a href="#" class="hover:text-primary transition-all"><i
+                            class="fa-brands fa-x-twitter text-2xl"></i></a>
+                </div>
+
+                <div class="text-center">
+                    <div id="liveClock" class="text-3xl font-serif text-[#63348]">00:00:00</div>
+                    <div id="liveDate" class="text-[14px] uppercase tracking-[0.2em] text-[#63348]-400 mt-2">Loading...
+                    </div>
+                </div>
+
+                <p class="text-xs text-[#63348]-500 text-center md:text-right uppercase tracking-widest leading-loose">
+                    © 2026 Pandian Interior's.<br>Made BY Hexavision Technologies -All rights are reserved. </p>
+            </div>
+        </section>
+    </main>
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // --- FIXED HAMBURGER MENU LOGIC ---
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const bar1 = document.getElementById('bar1');
+        const bar2 = document.getElementById('bar2');
+        const bar3 = document.getElementById('bar3');
+
+
+        menuBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.contains('translate-y-0');
+
+            if (!isOpen) {
+                // ✅ OPEN MENU
+                mobileMenu.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+                mobileMenu.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+
+                bar1.style.transform = "rotate(45deg) translate(5px, 5px)";
+                bar2.style.opacity = "0";
+                bar3.style.transform = "rotate(-45deg) translate(5px, -5px)";
+
+            } else {
+                // ❌ CLOSE MENU
+                mobileMenu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+                mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+
+                bar1.style.transform = "none";
+                bar2.style.opacity = "1";
+                bar3.style.transform = "none";
+            }
+        });
+
+        // Cursor Logic
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', (e) => {
+            window.requestAnimationFrame(() => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            });
+        });
+
+        document.querySelectorAll('a, button, input, textarea, .group').forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('cursor-active'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-active'));
+        });
+
+        // Live Clock Logic
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('liveClock').textContent = now.toLocaleTimeString('en-US', { hour12: false });
+            document.getElementById('liveDate').textContent = now.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Form Logic
+        document.getElementById('contactInquiryForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('userName').value;
+            const email = document.getElementById('userEmail').value;
+            const message = document.getElementById('userMessage').value;
+            const text = `*New Inquiry*%0A*Name:* ${name}%0A*Email:* ${email}%0A*Message:* ${message}`;
+            window.open(`https://wa.me/919000000000?text=${text}`, '_blank');
+        });
+    </script>
+</body>
+
+</html>
